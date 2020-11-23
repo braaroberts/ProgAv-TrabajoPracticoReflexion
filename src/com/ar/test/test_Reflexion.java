@@ -1,8 +1,6 @@
 package com.ar.test;
 
-
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -10,12 +8,11 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import com.ar.Anotaciones.*;
+import com.ar.Anotaciones.Persona;
 import com.ar.Servicios.Consultas;
 import com.ar.Utilidades.UBean;
 
-class Test_TP {
-
+public class Test_Reflexion {
 	@Test
 	void test1_validaUtilidades_obtenerAtributos() {
 		Persona p = new Persona();
@@ -85,5 +82,8 @@ class Test_TP {
 		
 		
 	}
+	
+
+	
 
 }
